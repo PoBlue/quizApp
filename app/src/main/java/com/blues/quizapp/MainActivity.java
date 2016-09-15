@@ -143,8 +143,8 @@ public class MainActivity extends AppCompatActivity {
     public void submit(View v){
         int score = 0;
         String noanswerText = "No answer in: ";
-        String correctAnswerText = "Correct answer: ";
-        String inCorrectAnswerText = "InCorrect answer: ";
+        String correctAnswerText = "# Correct answer: ";
+        String inCorrectAnswerText = "# InCorrect answer #: \n\n";
 
         for (Map.Entry<String,String> answer: answers.entrySet()){
             String key = answer.getKey();
@@ -158,12 +158,12 @@ public class MainActivity extends AppCompatActivity {
                 score += 5;
                 correctAnswerText = correctAnswerText + key + ", ";
             } else {
-                inCorrectAnswerText = inCorrectAnswerText + key + ", " ;
+                inCorrectAnswerText = inCorrectAnswerText + key + ",should be: " + correctAnswers.get(key) + " \n\n";
             }
         }
 
         if (countCorrectAnswer != countCheckBoxAnswer){
-            inCorrectAnswerText += checkBoxAnswerKey + ", ";
+            inCorrectAnswerText += checkBoxAnswerKey + ", " + "should be: sensory and motor and interneurons \n\n";
         } else {
             score += 5;
             correctAnswerText += checkBoxAnswerKey + ", ";
@@ -174,11 +174,11 @@ public class MainActivity extends AppCompatActivity {
             score += 10;
             correctAnswerText += "Queastion 6, ";
         } else {
-            inCorrectAnswerText += "Queastion 6, ";
+            inCorrectAnswerText += "Queastion 6: " + " should be: " + correctAnswer6 + " \n";
         }
 
         Toast.makeText(this,
-                "The final score is: " + score + "\n"
+                "# The final score is: --> " + score + "\n"
                         + "---------- \n"
                         + correctAnswerText + "\n"
                         + "---------- \n"
