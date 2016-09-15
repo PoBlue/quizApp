@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
         int score = 0;
         String noanswerText = "No answer in: ";
         String correctAnswerText = "# Correct answer: ";
-        String inCorrectAnswerText = "# InCorrect answer #: \n\n";
+        String inCorrectAnswerText = "# InCorrect answer # \n\n";
 
         for (Map.Entry<String,String> answer: answers.entrySet()){
             String key = answer.getKey();
@@ -174,11 +174,11 @@ public class MainActivity extends AppCompatActivity {
             score += 10;
             correctAnswerText += "Queastion 6, ";
         } else {
-            inCorrectAnswerText += "Queastion 6: " + " should be: " + correctAnswer6 + " \n";
+            inCorrectAnswerText += "Queastion 6, " + " should be: " + correctAnswer6 + " \n";
         }
 
         Toast.makeText(this,
-                "# The final score is: --> " + score + "\n"
+                "# The final score is --> " + score + " !\n"
                         + "---------- \n"
                         + correctAnswerText + "\n"
                         + "---------- \n"
