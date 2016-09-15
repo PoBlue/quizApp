@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+
+    <!-- questions -->
+    <string name="q1">Q1: Which of the following are the parts of neurons?</string>
+    <string name="q2">Q2: A dendrite conducts nerve impulses ________ the cell body.</string>
+    <string name="q3">Q3: An axon conducts nerve impulses _________ the cell body.</string>
+    <string name="q4">Q4: Which of the following is/are type(s) of neurons? (multiple-choice)</string>
+    <string name="q5">Q5: Sensory nerve cells act as the decision-making cells to sum up all signals for certain stimuli.</string>
+
+    <!-- choices for question -->
+    <string-array name="choices1">
+        <item>brain, spinal cord, and vertebral column</item>
+        <item>dendrite, axon, and cell body</item>
+        <item>sensory and motor</item>
+        <item>cortex, medulla and sheath</item>
+        <item>sympathetic and parasympathetic</item>
+    </string-array>
+
+    <string-array name="choices2">
+        <item>away from</item>
+        <item>toward</item>
+        <item>both toward and away from</item>
+        <item>around, bypassing</item>
+        <item>only inside</item>
+    </string-array>
+
+    <string-array name="choices3">
+        <item>away from</item>
+        <item>toward</item>
+        <item>both toward and away from</item>
+        <item>around, bypassing</item>
+        <item>only inside</item>
+    </string-array>
+
+    <string-array name="choices4">
+        <item>sensory</item>
+        <item>motor</item>
+        <item>interneurons</item>
+    </string-array>
+
+    <string-array name="choices5">
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+
+    <!-- answer to the question1,2,3,5 -->
+    <string-array name="answers">
+        <item>dendrite, axon, and cell body</item>
+        <item>toward</item>
+        <item>away from</item>
+        <item>false</item>
+    </string-array>
+
+    <!-- answer to the question 4 -->
+    <string-array name="answers_to_q4">
+        <item>sensory</item>
+        <item>motor</item>
+        <item>interneurons</item>
+    </string-array>
+
+    <!-- the last question -->
+    <string name="last_question">Q6: How many questions in the quiz?</string>
+
+    <!-- answer to the last question -->
+    <string name="answer_last_question">6</string>
+    <string name="hint_last_question">Input the number</string>
+
+    <string name="submit_button">Submit</string>
+</resources>
